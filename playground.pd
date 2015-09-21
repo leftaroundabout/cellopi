@@ -1,0 +1,15 @@
+#N canvas 620 176 450 399 10;
+#X obj 146 370 dac~ 1;
+#X obj 147 295 tanh~;
+#X obj 266 81 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 3900 1;
+#X obj 144 76 *~ 0.5;
+#X obj 147 327 *~ 0.2;
+#X obj 145 29 bass-input-lp~;
+#X obj 166 162 herrenchor~;
+#X connect 1 0 4 0;
+#X connect 2 0 6 1;
+#X connect 3 0 6 0;
+#X connect 4 0 0 0;
+#X connect 5 0 3 0;
+#X connect 6 0 1 0;
