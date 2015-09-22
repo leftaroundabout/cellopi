@@ -10,9 +10,10 @@
 #X obj 160 28 inlet~;
 #X obj 353 15 inlet;
 #X obj 180 283 outlet~;
-#X obj 353 72 sig~;
-#X obj 353 94 lop~ 10;
+#X obj 354 93 sig~;
+#X obj 354 115 lop~ 10;
 #X obj 353 37 min 1;
+#X obj 353 59 *;
 #X connect 0 0 6 0;
 #X connect 1 0 5 1;
 #X connect 2 0 1 0;
@@ -26,4 +27,6 @@
 #X connect 11 0 12 0;
 #X connect 12 0 4 3;
 #X connect 12 0 5 3;
-#X connect 13 0 11 0;
+#X connect 13 0 14 0;
+#X connect 13 0 14 1;
+#X connect 14 0 11 0;
