@@ -1,0 +1,8 @@
+#N canvas 511 131 450 300 10;
+#X obj 139 50 pgmin;
+#X obj 139 72 select 1;
+#X msg 139 94 0;
+#X obj 139 116 outlet;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
